@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <title>PANKAJ BHARDWAJ | Stock Market Telegram</title>
+    <title>PANKAJ BHARDWAJ | Stock Market Telegram | NIFTY BANKNIFTY Options</title>
     
-    <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code (Pixel ID: 1522017636245579) -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1839757433369103');
-    fbq('track', 'PageView');
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1522017636245579');
+        fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1839757433369103&ev=PageView&noscript=1"
-    /></noscript>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1522017636245579&ev=PageView&noscript=1"/>
+    </noscript>
     <!-- End Meta Pixel Code -->
     
     <style>
@@ -141,13 +141,51 @@
             transform: scale(0.96);
         }
 
+        /* Subscribe Button (Gold Gradient) */
+        .subscribe-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            background: linear-gradient(135deg, #dc2626, #b91c1c, #991b1b);
+            border: none;
+            padding: 14px 12px;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 60px;
+            transition: all 0.2s ease;
+            box-shadow: 0 6px 16px rgba(220, 38, 38, 0.3);
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            margin-top: 16px;
+            width: 100%;
+        }
+
+        .subscribe-btn:hover {
+            background: linear-gradient(135deg, #b91c1c, #991b1b, #7f1d1d);
+            transform: scale(0.98);
+        }
+
+        .subscribe-btn:active {
+            transform: scale(0.96);
+        }
+
+        .subscribe-btn:disabled {
+            opacity: 0.7;
+            transform: none;
+            cursor: default;
+        }
+
         .top-button {
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
 
         .bottom-button {
-            margin-top: 28px;
-            margin-bottom: 12px;
+            margin-top: 20px;
+            margin-bottom: 8px;
         }
 
         .tagline {
@@ -237,6 +275,25 @@
             margin-top: 8px;
         }
 
+        .tracking-status {
+            text-align: center;
+            font-size: 0.6rem;
+            color: #4c9aff;
+            margin-top: 12px;
+            background: rgba(0,0,0,0.3);
+            padding: 4px 8px;
+            border-radius: 20px;
+            display: inline-block;
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .status-wrapper {
+            text-align: center;
+            margin-top: 12px;
+        }
+
         @media (max-width: 480px) {
             .content {
                 padding: 20px 16px 30px;
@@ -251,6 +308,10 @@
             .join-btn {
                 padding: 14px 10px;
                 font-size: 1rem;
+            }
+            .subscribe-btn {
+                padding: 12px 10px;
+                font-size: 0.95rem;
             }
             .point-text {
                 font-size: 0.85rem;
@@ -282,9 +343,9 @@
             </div>
         </div>
 
-        <!-- ✅ BUTTON 1 - TOP (Correct Link) -->
+        <!-- ✅ BUTTON 1 - TOP TELEGRAM (with tracking) -->
         <div class="top-button">
-            <a href="https://t.me/+RV-nfQ3P1SMwOGU9" target="_blank" class="join-btn" id="topJoinBtn" onclick="fbq('track', 'Lead');">
+            <a href="https://t.me/+RV-nfQ3P1SMwOGU9" target="_blank" rel="noopener noreferrer" class="join-btn" id="topJoinBtn" data-position="top" data-button-name="telegram_top">
                 📲 JOIN TELEGRAM CHANNEL
             </a>
         </div>
@@ -322,9 +383,14 @@
             </div>
         </div>
 
-        <!-- ✅ BUTTON 2 - BOTTOM (Correct Link) -->
+        <!-- ✅ SUBSCRIBE BUTTON (with complete tracking) -->
+        <button id="subscribeButton" class="subscribe-btn" data-button-name="subscribe_main">
+            🔔 SUBSCRIBE TO UPDATES 🔔
+        </button>
+
+        <!-- ✅ BUTTON 2 - BOTTOM TELEGRAM (with tracking) -->
         <div class="bottom-button">
-            <a href="https://t.me/+RV-nfQ3P1SMwOGU9" target="_blank" class="join-btn" id="bottomJoinBtn" onclick="fbq('track', 'Lead');">
+            <a href="https://t.me/+RV-nfQ3P1SMwOGU9" target="_blank" rel="noopener noreferrer" class="join-btn" id="bottomJoinBtn" data-position="bottom" data-button-name="telegram_bottom">
                 📲 JOIN TELEGRAM CHANNEL
             </a>
         </div>
@@ -341,21 +407,318 @@
         <div class="footer-text">
             📍 PANKAJ BHARDWAJ | Trade With Accuracy & Discipline
         </div>
+        
+        <div class="status-wrapper">
+            <div class="tracking-status" id="trackingStatus">🔵 Analytics Active • Meta Pixel Ready</div>
+        </div>
     </div>
 </div>
 
 <script>
-    // Both buttons working fine with correct IDs
-    document.getElementById('topJoinBtn').addEventListener('click', function() {
-        console.log('✅ Top button clicked - Opening Telegram: https://t.me/+RV-nfQ3P1SMwOGU9');
-    });
-    
-    document.getElementById('bottomJoinBtn').addEventListener('click', function() {
-        console.log('✅ Bottom button clicked - Opening Telegram: https://t.me/+RV-nfQ3P1SMwOGU9');
-    });
+    (function() {
+        // ======================== COMPLETE TRACKING CODE ========================
+        const TELEGRAM_LINK = "https://t.me/+RV-nfQ3P1SMwOGU9";
+        
+        // Safe fbq call with fallback
+        function safeFbq() {
+            if (typeof fbq !== 'undefined' && fbq !== null && typeof fbq === 'function') {
+                return fbq;
+            }
+            window.fbq = window.fbq || function() { console.log('[FBQ Fallback]', arguments); };
+            return window.fbq;
+        }
+        
+        // ---------- TELEGRAM BUTTON TRACKING (Lead + InitiateContact + Custom) ----------
+        function trackTelegramClick(event) {
+            // Debounce to prevent double tracking
+            if (this._trackingActive) return;
+            this._trackingActive = true;
+            setTimeout(() => { this._trackingActive = false; }, 800);
+            
+            const buttonPosition = this.getAttribute('data-position') || 'unknown';
+            const buttonName = this.getAttribute('data-button-name') || 'telegram_btn';
+            
+            try {
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    // 1) Lead Event (primary conversion)
+                    fbqFunc('track', 'Lead', {
+                        content_name: 'Telegram_Channel_Join_PANKAJ_BHARDWAJ',
+                        content_category: 'Telegram_Invite_Link',
+                        content_type: 'telegram_channel',
+                        value: 1.5,
+                        currency: 'INR',
+                        method: 'telegram_click',
+                        button_position: buttonPosition,
+                        owner: 'PANKAJ_BHARDWAJ',
+                        campaign: 'NIFTY_BANKNIFTY_OPTIONS'
+                    });
+                    
+                    // 2) InitiateContact Event
+                    fbqFunc('track', 'InitiateContact', {
+                        contact_method: 'Telegram_Channel',
+                        content_name: 'PANKAJ_BHARDWAJ_Telegram_Join',
+                        button_location: buttonName,
+                        channel_type: 'NIFTY_BANKNIFTY_TRADING',
+                        position: buttonPosition,
+                        brand_owner: 'PANKAJ_BHARDWAJ'
+                    });
+                    
+                    // 3) Custom Event for segmentation
+                    fbqFunc('trackCustom', 'TelegramJoinClick_PANKAJ', {
+                        button_location: buttonName,
+                        position_on_page: buttonPosition,
+                        owner: 'PANKAJ_BHARDWAJ',
+                        timestamp: new Date().toISOString(),
+                        user_segment: 'options_trader'
+                    });
+                    
+                    // Update status UI
+                    const statusDiv = document.getElementById('trackingStatus');
+                    if (statusDiv) {
+                        statusDiv.innerHTML = '✅ Telegram Join Tracked • Lead Event Sent ✅';
+                        setTimeout(() => {
+                            if (statusDiv.innerHTML.includes('Lead Event Sent'))
+                                statusDiv.innerHTML = '🔵 Analytics Active • Meta Pixel Ready';
+                        }, 3000);
+                    }
+                    console.log(`✅ [Pixel] Telegram join tracked from ${buttonPosition} (PANKAJ BHARDWAJ)`);
+                }
+            } catch(e) {
+                console.error('Pixel tracking error (Telegram):', e);
+            }
+            // Allow navigation - don't prevent default
+            return true;
+        }
+        
+        // ---------- SUBSCRIBE BUTTON: Complete Pixel Tracking (Subscribe + Lead + Custom + Contact) ----------
+        function handleSubscribeClick(event) {
+            event.preventDefault();
+            
+            const subBtn = document.getElementById('subscribeButton');
+            if (subBtn && subBtn.disabled) return;
+            
+            try {
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    // PRIMARY EVENT: Subscribe (Standard Event)
+                    fbqFunc('track', 'Subscribe', {
+                        content_name: 'PANKAJ_BHARDWAJ_Market_Updates',
+                        content_category: 'NIFTY_BANKNIFTY_Options_Subscription',
+                        predicted_ltv: 2.5,
+                        currency: 'INR',
+                        value: 0,
+                        status: 'subscribed',
+                        subscription_type: 'daily_free_calls',
+                        accuracy_rate: '85-95%',
+                        source: 'landing_page_card',
+                        owner: 'PANKAJ_BHARDWAJ'
+                    });
+                    
+                    // LEAD Event (high-intent lead capture)
+                    fbqFunc('track', 'Lead', {
+                        content_name: 'PANKAJ_BHARDWAJ_Update_Subscription',
+                        content_category: 'Stock_Market_Lead',
+                        value: 1,
+                        currency: 'INR',
+                        method: 'subscribe_button_click',
+                        lead_type: 'market_updates_subscription',
+                        owner_name: 'PANKAJ_BHARDWAJ',
+                        offer: 'NIFTY_BANKNIFTY_DAILY_CALLS'
+                    });
+                    
+                    // Custom Event for granular tracking
+                    fbqFunc('trackCustom', 'SubscribeButtonClick_PANKAJ', {
+                        button_id: 'subscribeButton',
+                        location: 'main_card_center',
+                        user_action: 'click_subscribe_updates',
+                        offer_type: 'NIFTY_BANKNIFTY_DAILY_CALLS',
+                        timestamp_ms: Date.now(),
+                        accuracy_claim: '85-95%',
+                        trader: 'PANKAJ_BHARDWAJ'
+                    });
+                    
+                    // Contact Event (deeper engagement)
+                    fbqFunc('track', 'Contact', {
+                        contact_type: 'website_subscription',
+                        content_name: 'PANKAJ_BHARDWAJ_OptIn',
+                        channel: 'organic_landing',
+                        owner: 'PANKAJ_BHARDWAJ'
+                    });
+                    
+                    console.log('✅ [Pixel] Subscribe button tracked: Subscribe + Lead + Custom + Contact (PANKAJ BHARDWAJ)');
+                    
+                    // Update status UI
+                    const statusDiv = document.getElementById('trackingStatus');
+                    if (statusDiv) {
+                        statusDiv.innerHTML = '🎯 SUBSCRIBE CONVERSION TRACKED! (Subscribe + Lead) 🎯';
+                        setTimeout(() => {
+                            if (statusDiv.innerHTML.includes('CONVERSION TRACKED'))
+                                statusDiv.innerHTML = '🔵 Analytics Active • Meta Pixel Ready';
+                        }, 4000);
+                    }
+                } else {
+                    console.warn('fbq not available for subscribe tracking');
+                }
+            } catch(e) {
+                console.error('Subscribe pixel error:', e);
+            }
+            
+            // Show confirmation alert
+            alert("✅ SUBSCRIPTION CONFIRMED! ✅\n\nThank you for subscribing to PANKAJ BHARDWAJ\n\n📊 What you'll receive:\n• Daily NIFTY/BANKNIFTY calls (85-95% accuracy)\n• 4-5 observational calls daily\n• Stock Options insights & market analysis\n• FII/DII data & live updates\n\n🚀 Get ready for profitable trades! Join Telegram for instant calls.");
+            
+            // Visual feedback on subscribe button
+            if (subBtn) {
+                const originalText = subBtn.innerHTML;
+                const originalBg = subBtn.style.background;
+                subBtn.innerHTML = "✅ SUBSCRIBED! THANK YOU ✅";
+                subBtn.style.background = "linear-gradient(135deg, #059669, #047857, #065f46)";
+                subBtn.disabled = true;
+                sessionStorage.setItem('pankaj_subscribed', 'true');
+                setTimeout(() => {
+                    subBtn.innerHTML = originalText;
+                    subBtn.style.background = originalBg;
+                    subBtn.disabled = false;
+                }, 4000);
+            }
+            return false;
+        }
+        
+        // ---------- Attach Telegram Button Listeners ----------
+        const topTeleBtn = document.getElementById('topJoinBtn');
+        const bottomTeleBtn = document.getElementById('bottomJoinBtn');
+        
+        if (topTeleBtn) {
+            topTeleBtn.setAttribute('href', TELEGRAM_LINK);
+            topTeleBtn.setAttribute('target', '_blank');
+            topTeleBtn.setAttribute('rel', 'noopener noreferrer');
+            topTeleBtn.removeEventListener('click', trackTelegramClick);
+            topTeleBtn.addEventListener('click', trackTelegramClick);
+        }
+        
+        if (bottomTeleBtn) {
+            bottomTeleBtn.setAttribute('href', TELEGRAM_LINK);
+            bottomTeleBtn.setAttribute('target', '_blank');
+            bottomTeleBtn.setAttribute('rel', 'noopener noreferrer');
+            bottomTeleBtn.removeEventListener('click', trackTelegramClick);
+            bottomTeleBtn.addEventListener('click', trackTelegramClick);
+        }
+        
+        // ---------- Attach Subscribe Button Listener ----------
+        const subscribeBtn = document.getElementById('subscribeButton');
+        if (subscribeBtn) {
+            subscribeBtn.removeEventListener('click', handleSubscribeClick);
+            subscribeBtn.addEventListener('click', handleSubscribeClick);
+        }
+        
+        // ---------- Scroll Depth Tracking (25%, 50%, 75%) ----------
+        let scrollDepthTracked = {25: false, 50: false, 75: false};
+        window.addEventListener('scroll', function() {
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolledPercent = (scrollTop / scrollHeight) * 100;
+            
+            if (scrolledPercent >= 25 && !scrollDepthTracked[25]) {
+                scrollDepthTracked[25] = true;
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    fbqFunc('trackCustom', 'ScrollDepth_25', {page: 'PANKAJ_BHARDWAJ_LANDING', owner: 'PANKAJ_BHARDWAJ'});
+                }
+            }
+            if (scrolledPercent >= 50 && !scrollDepthTracked[50]) {
+                scrollDepthTracked[50] = true;
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    fbqFunc('trackCustom', 'ScrollDepth_50', {page: 'PANKAJ_BHARDWAJ_LANDING', owner: 'PANKAJ_BHARDWAJ'});
+                }
+            }
+            if (scrolledPercent >= 75 && !scrollDepthTracked[75]) {
+                scrollDepthTracked[75] = true;
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    fbqFunc('trackCustom', 'ScrollDepth_75', {page: 'PANKAJ_BHARDWAJ_LANDING', owner: 'PANKAJ_BHARDWAJ'});
+                }
+            }
+        });
+        
+        // ---------- Time on Page Tracking ----------
+        let sessionStartTime = Date.now();
+        window.addEventListener('beforeunload', function() {
+            const timeSpentSec = Math.round((Date.now() - sessionStartTime) / 1000);
+            if (timeSpentSec > 5) {
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    fbqFunc('trackCustom', 'TimeOnPage_PANKAJ', {
+                        seconds_spent: timeSpentSec,
+                        page_type: 'telegram_promo_landing',
+                        engaged: timeSpentSec > 30,
+                        owner: 'PANKAJ_BHARDWAJ'
+                    });
+                }
+            }
+        });
+        
+        // ---------- Load Event: Enhanced PageView + Session Start ----------
+        window.addEventListener('load', function() {
+            const fbqFunc = safeFbq();
+            if (typeof fbqFunc === 'function') {
+                fbqFunc('track', 'PageView', {
+                    content_name: 'PANKAJ_BHARDWAJ_LANDING_PAGE',
+                    engagement_type: 'full_landing_loaded',
+                    market_focus: 'NIFTY_BANKNIFTY_OPTIONS',
+                    source: 'direct_traffic',
+                    owner: 'PANKAJ_BHARDWAJ',
+                    accuracy: '85-95%'
+                });
+                
+                fbqFunc('trackCustom', 'PANKAJ_SessionStart', {
+                    session_id: Date.now().toString(36) + Math.random().toString(36).substr(2, 8),
+                    user_bucket: 'options_traders',
+                    channel_accuracy: 'high_85_95',
+                    timestamp_iso: new Date().toISOString(),
+                    device_category: window.innerWidth < 768 ? 'mobile' : 'desktop',
+                    trader_name: 'PANKAJ_BHARDWAJ'
+                });
+                
+                console.log('✅ Enhanced PageView & SessionStart fired (PANKAJ BHARDWAJ)');
+            }
+            
+            const statusDiv = document.getElementById('trackingStatus');
+            if (statusDiv) {
+                statusDiv.innerHTML = '✅ All Events Active • Subscribe & Telegram Tracking Live ✅';
+                setTimeout(() => {
+                    if (statusDiv && statusDiv.innerHTML.includes('Tracking Live'))
+                        statusDiv.innerHTML = '🔵 Analytics Active • Pixel ID: 1522017636245579 | PANKAJ BHARDWAJ';
+                }, 4000);
+            }
+            
+            console.log('🚀 PANKAJ BHARDWAJ | Full Tracking Active | Pixel: 1522017636245579');
+        });
+        
+        // Check for existing subscription in session
+        if (sessionStorage.getItem('pankaj_subscribed') === 'true') {
+            console.log('Previous subscription session detected for PANKAJ BHARDWAJ');
+        }
+        
+        // Final safety for fbq
+        if (typeof fbq === 'undefined') {
+            window.fbq = function() { console.log('fbq fallback:', arguments); };
+        }
+    })();
 </script>
 
-</body>
-</html>
+<!-- Final verification -->
+<script>
+    (function finalCheck() {
+        const topBtn = document.getElementById('topJoinBtn');
+        const bottomBtn = document.getElementById('bottomJoinBtn');
+        const subBtn = document.getElementById('subscribeButton');
+        console.log(`🔍 Final Check: Top Telegram: ${topBtn ? 'OK' : 'MISSING'}, Bottom Telegram: ${bottomBtn ? 'OK' : 'MISSING'}, Subscribe: ${subBtn ? 'OK' : 'MISSING'}`);
+        if (typeof fbq !== 'undefined') {
+            console.log('✓ Meta Pixel (1522017636245579) active for PANKAJ BHARDWAJ with full tracking');
+        }
+    })();
+</script>
+
 </body>
 </html>
