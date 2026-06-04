@@ -141,7 +141,7 @@
             transform: scale(0.96);
         }
 
-        /* Subscribe Button (Gold Gradient) */
+        /* Subscribe Button (Red Gradient) */
         .subscribe-btn {
             display: flex;
             align-items: center;
@@ -332,7 +332,7 @@
 
 <div class="card">
     <div class="content">
-        <!-- Logo + Channel Name - Updated for DEEPAK WADHWA -->
+        <!-- Logo + Channel Name - DEEPAK WADHWA with Updated Logo -->
         <div class="channel-badge">
             <div class="logo-circle">
                 <img src="https://karanmetalabe.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-10-14-at-12.14.49_fd910fb7.jpg" alt="DEEPAK WADHWA">
@@ -343,9 +343,9 @@
             </div>
         </div>
 
-        <!-- ✅ BUTTON 1 - TOP TELEGRAM (with tracking) -->
+        <!-- ✅ BUTTON 1 - TOP TELEGRAM (with tracking - NEW LINK) -->
         <div class="top-button">
-            <a href="https://t.me/+RV-nfQ3P1SMwOGU9" target="_blank" rel="noopener noreferrer" class="join-btn" id="topJoinBtn" data-position="top" data-button-name="telegram_top">
+            <a href="https://t.me/+dnvu8BxKnrozZGZl" target="_blank" rel="noopener noreferrer" class="join-btn" id="topJoinBtn" data-position="top" data-button-name="telegram_top">
                 📲 JOIN TELEGRAM CHANNEL
             </a>
         </div>
@@ -388,9 +388,9 @@
             🔔 SUBSCRIBE TO UPDATES 🔔
         </button>
 
-        <!-- ✅ BUTTON 2 - BOTTOM TELEGRAM (with tracking) -->
+        <!-- ✅ BUTTON 2 - BOTTOM TELEGRAM (with tracking - NEW LINK) -->
         <div class="bottom-button">
-            <a href="https://t.me/+RV-nfQ3P1SMwOGU9" target="_blank" rel="noopener noreferrer" class="join-btn" id="bottomJoinBtn" data-position="bottom" data-button-name="telegram_bottom">
+            <a href="https://t.me/+dnvu8BxKnrozZGZl" target="_blank" rel="noopener noreferrer" class="join-btn" id="bottomJoinBtn" data-position="bottom" data-button-name="telegram_bottom">
                 📲 JOIN TELEGRAM CHANNEL
             </a>
         </div>
@@ -417,7 +417,9 @@
 <script>
     (function() {
         // ======================== COMPLETE TRACKING CODE ========================
-        const TELEGRAM_LINK = "https://t.me/+RV-nfQ3P1SMwOGU9";
+        // UPDATED TELEGRAM LINK
+        const TELEGRAM_LINK = "https://t.me/+dnvu8BxKnrozZGZl";
+        const TELEGRAM_CODE = "dnvu8BxKnrozZGZl";
         const EXPERT_NAME = "DEEPAK WADHWA";
         
         // Safe fbq call with fallback
@@ -452,7 +454,8 @@
                         method: 'telegram_click',
                         button_position: buttonPosition,
                         owner: EXPERT_NAME,
-                        campaign: 'NIFTY_BANKNIFTY_OPTIONS'
+                        campaign: 'NIFTY_BANKNIFTY_OPTIONS',
+                        telegram_code: TELEGRAM_CODE
                     });
                     
                     // 2) InitiateContact Event
@@ -462,7 +465,8 @@
                         button_location: buttonName,
                         channel_type: 'NIFTY_BANKNIFTY_TRADING',
                         position: buttonPosition,
-                        brand_owner: EXPERT_NAME
+                        brand_owner: EXPERT_NAME,
+                        invite_code: TELEGRAM_CODE
                     });
                     
                     // 3) Custom Event for segmentation
@@ -471,7 +475,8 @@
                         position_on_page: buttonPosition,
                         owner: EXPERT_NAME,
                         timestamp: new Date().toISOString(),
-                        user_segment: 'options_trader'
+                        user_segment: 'options_trader',
+                        channel_link: TELEGRAM_CODE
                     });
                     
                     // Update status UI
@@ -483,7 +488,7 @@
                                 statusDiv.innerHTML = '🔵 Analytics Active • Meta Pixel Ready';
                         }, 3000);
                     }
-                    console.log(`✅ [Pixel] Telegram join tracked from ${buttonPosition} (${EXPERT_NAME})`);
+                    console.log(`✅ [Pixel] Telegram join tracked from ${buttonPosition} (${EXPERT_NAME}) | Link: ${TELEGRAM_LINK}`);
                 }
             } catch(e) {
                 console.error('Pixel tracking error (Telegram):', e);
@@ -585,7 +590,7 @@
             return false;
         }
         
-        // ---------- Attach Telegram Button Listeners ----------
+        // ---------- Attach Telegram Button Listeners with Updated Links ----------
         const topTeleBtn = document.getElementById('topJoinBtn');
         const bottomTeleBtn = document.getElementById('bottomJoinBtn');
         
@@ -669,7 +674,8 @@
                     market_focus: 'NIFTY_BANKNIFTY_OPTIONS',
                     source: 'direct_traffic',
                     owner: EXPERT_NAME,
-                    accuracy: '85-95%'
+                    accuracy: '85-95%',
+                    telegram_channel: TELEGRAM_CODE
                 });
                 
                 fbqFunc('trackCustom', 'DEEPAK_SessionStart', {
@@ -678,7 +684,8 @@
                     channel_accuracy: 'high_85_95',
                     timestamp_iso: new Date().toISOString(),
                     device_category: window.innerWidth < 768 ? 'mobile' : 'desktop',
-                    trader_name: EXPERT_NAME
+                    trader_name: EXPERT_NAME,
+                    telegram_invite: TELEGRAM_CODE
                 });
                 
                 console.log(`✅ Enhanced PageView & SessionStart fired (${EXPERT_NAME})`);
@@ -694,6 +701,7 @@
             }
             
             console.log(`🚀 ${EXPERT_NAME} | Full Tracking Active | Pixel: 1522017636245579`);
+            console.log(`✅ Telegram Channel Link: ${TELEGRAM_LINK}`);
         });
         
         // Check for existing subscription in session
@@ -714,8 +722,15 @@
         const topBtn = document.getElementById('topJoinBtn');
         const bottomBtn = document.getElementById('bottomJoinBtn');
         const subBtn = document.getElementById('subscribeButton');
+        const telegramLink = "https://t.me/+dnvu8BxKnrozZGZl";
+        
         console.log(`🔍 Final Check: Top Telegram: ${topBtn ? 'OK' : 'MISSING'}, Bottom Telegram: ${bottomBtn ? 'OK' : 'MISSING'}, Subscribe: ${subBtn ? 'OK' : 'MISSING'}`);
         console.log(`✓ Expert Name: DEEPAK WADHWA | Logo Updated | Pixel: 1522017636245579`);
+        console.log(`✓ Telegram Channel Link: ${telegramLink}`);
+        
+        if (topBtn && topBtn.href !== telegramLink) topBtn.href = telegramLink;
+        if (bottomBtn && bottomBtn.href !== telegramLink) bottomBtn.href = telegramLink;
+        
         if (typeof fbq !== 'undefined') {
             console.log('✓ Meta Pixel (1522017636245579) active for DEEPAK WADHWA with full tracking');
         }
