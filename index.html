@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SIVIADSAGENCY IN LUCKNOW</title>
+  <title>KARAN AD AGENCY IN LUCKNOW</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-  <!-- Meta Pixel Code (same ID) -->
+  <!-- Meta Pixel Code - ID: 2183477718876836 -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -17,11 +17,11 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1065874929190123');
+    fbq('init', '2183477718876836');
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1065874929190123&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=2183477718876836&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Meta Pixel Code -->
   <style>
@@ -129,7 +129,7 @@
 
       <div class="rb-footer">
         <div class="rb-footer-txt">@Adzonn · Stay ahead with knowledge</div>
-        <a href="#" target="_blank" class="rb-agency">📱 SIVIADSAGENCY</a>
+        <a href="#" target="_blank" class="rb-agency">📱 KARAN AD AGENCY</a>
       </div>
       
       <div class="rb-fixed-disclaimer">
@@ -142,14 +142,16 @@
 
   <script>
     // ============================================================
-    // COMPLETE TRACKING CODE - PIXEL: 1065874929190123
+    // COMPLETE TRACKING CODE - PIXEL: 2183477718876836
     // TELEGRAM LINK: https://t.me/+mxsYqCsjUwZjZjVl
     // TIMER: 25 SECONDS
+    // AGENCY: KARAN AD AGENCY
     // ============================================================
     (function() {
       const TELEGRAM_LINK = "https://t.me/+mxsYqCsjUwZjZjVl";
-      const PIXEL_ID = "1065874929190123";
+      const PIXEL_ID = "2183477718876836";
       const BRAND_NAME = "DEEPAK_WADHWA";
+      const AGENCY_NAME = "KARAN_AD_AGENCY";
 
       function showToast(message, duration = 1500) {
         const toast = document.getElementById('trackingToast');
@@ -189,6 +191,7 @@
               timestamp: eventTimestamp,
               pixel_id: PIXEL_ID,
               brand: BRAND_NAME,
+              agency: AGENCY_NAME,
               device: deviceType
             });
             fbqFunc('track', 'Subscribe', {
@@ -198,13 +201,15 @@
               subscription_method: 'telegram_join_link',
               channel_link: TELEGRAM_LINK,
               button_used: buttonText,
-              pixel_id: PIXEL_ID
+              pixel_id: PIXEL_ID,
+              agency: AGENCY_NAME
             });
             fbqFunc('track', 'Contact', {
               contact_method: 'Telegram_Channel_Join',
               channel_name: BRAND_NAME,
               brand: BRAND_NAME,
-              pixel_id: PIXEL_ID
+              pixel_id: PIXEL_ID,
+              agency: AGENCY_NAME
             });
             fbqFunc('track', 'CompleteRegistration', {
               registration_method: 'Telegram_Subscribe_Button',
@@ -212,7 +217,8 @@
               status: 'joined',
               channel_owner: BRAND_NAME,
               niche: 'NIFTY_BANKNIFTY_OPTIONS',
-              pixel_id: PIXEL_ID
+              pixel_id: PIXEL_ID,
+              agency: AGENCY_NAME
             });
             fbqFunc('trackCustom', 'JoinTelegramClick', {
               event_source: `${BRAND_NAME}_LandingPage`,
@@ -221,19 +227,22 @@
               device_type: deviceType,
               timestamp_ms: Date.now(),
               brand: BRAND_NAME,
-              pixel_id: PIXEL_ID
+              pixel_id: PIXEL_ID,
+              agency: AGENCY_NAME
             });
             fbqFunc('trackCustom', 'DeepakWadhwaSubscription', {
               channel_owner: 'DEEPAK_WADHWA',
               market_focus: 'NIFTY_BANKNIFTY_OPTIONS',
               accuracy: '95%',
               language: 'English_Hindi',
-              pixel_id: PIXEL_ID
+              pixel_id: PIXEL_ID,
+              agency: AGENCY_NAME
             });
             showToast(`✅ Joined! Events tracked`, 1500);
             console.log(`✅ Facebook Pixel Events Tracked | Pixel: ${PIXEL_ID}`);
             console.log(`   🔗 Telegram Link: ${TELEGRAM_LINK}`);
             console.log(`   🏷️ Brand: ${BRAND_NAME}`);
+            console.log(`   📱 Agency: ${AGENCY_NAME}`);
           } else {
             console.warn(`⚠️ Facebook Pixel not loaded. Pixel ID: ${PIXEL_ID}`);
             showToast(`📱 Joining channel...`, 1200);
@@ -250,6 +259,7 @@
           console.log(`⏱️ Time: ${eventTimestamp}`);
           console.log(`📱 Device: ${deviceType}`);
           console.log(`🏷️ Brand: ${BRAND_NAME}`);
+          console.log(`📱 Agency: ${AGENCY_NAME}`);
           console.groupEnd();
         }
       }
@@ -295,17 +305,17 @@
           const scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight;
           if (scrollPercent >= 0.25 && !scrollTracked25) {
             scrollTracked25 = true;
-            fbqFunc('trackCustom', 'ScrollDepth', { depth_percent: 25, page: 'deepak_wadhwa_landing', pixel_id: PIXEL_ID, brand: BRAND_NAME });
+            fbqFunc('trackCustom', 'ScrollDepth', { depth_percent: 25, page: 'deepak_wadhwa_landing', pixel_id: PIXEL_ID, brand: BRAND_NAME, agency: AGENCY_NAME });
             console.log('📊 Scroll 25% tracked');
           }
           if (scrollPercent >= 0.50 && !scrollTracked50) {
             scrollTracked50 = true;
-            fbqFunc('trackCustom', 'ScrollDepth', { depth_percent: 50, page: 'deepak_wadhwa_landing', pixel_id: PIXEL_ID, brand: BRAND_NAME });
+            fbqFunc('trackCustom', 'ScrollDepth', { depth_percent: 50, page: 'deepak_wadhwa_landing', pixel_id: PIXEL_ID, brand: BRAND_NAME, agency: AGENCY_NAME });
             console.log('📊 Scroll 50% tracked');
           }
           if (scrollPercent >= 0.75 && !scrollTracked75) {
             scrollTracked75 = true;
-            fbqFunc('trackCustom', 'ScrollDepth', { depth_percent: 75, page: 'deepak_wadhwa_landing', pixel_id: PIXEL_ID, brand: BRAND_NAME });
+            fbqFunc('trackCustom', 'ScrollDepth', { depth_percent: 75, page: 'deepak_wadhwa_landing', pixel_id: PIXEL_ID, brand: BRAND_NAME, agency: AGENCY_NAME });
             console.log('📊 Scroll 75% tracked');
           }
         });
@@ -322,7 +332,8 @@
               duration_seconds: timeSpent,
               page_type: 'Telegram_Subscribe_Official',
               pixel_id: PIXEL_ID,
-              brand: BRAND_NAME
+              brand: BRAND_NAME,
+              agency: AGENCY_NAME
             });
             console.log(`⏱️ Time on page: ${timeSpent}s`);
           }
@@ -341,14 +352,15 @@
               tg_invite_displayed: TELEGRAM_LINK,
               page_language: 'english_hindi',
               brand: BRAND_NAME,
-              pixel_id: PIXEL_ID
+              pixel_id: PIXEL_ID,
+              agency: AGENCY_NAME
             });
             console.log(`📄 Enhanced PageView tracked | Pixel ID: ${PIXEL_ID}`);
             console.log(`🔥 DEEPAK WADHWA | JOIN BUTTON TRACKING ACTIVE 🔥`);
-            console.log(`✅ NEW Pixel ID: ${PIXEL_ID}`);
-            console.log(`✅ NEW Telegram Channel: ${TELEGRAM_LINK}`);
+            console.log(`✅ Pixel ID: ${PIXEL_ID}`);
+            console.log(`✅ Telegram Channel: ${TELEGRAM_LINK}`);
             console.log(`✅ Timer: 25 seconds`);
-            console.log(`✅ Logo: Updated with new image URL`);
+            console.log(`✅ Agency: ${AGENCY_NAME}`);
           }
         });
       } else {
@@ -362,14 +374,15 @@
             tg_invite_displayed: TELEGRAM_LINK,
             page_language: 'english_hindi',
             brand: BRAND_NAME,
-            pixel_id: PIXEL_ID
+            pixel_id: PIXEL_ID,
+            agency: AGENCY_NAME
           });
           console.log(`📄 Enhanced PageView tracked | Pixel ID: ${PIXEL_ID}`);
           console.log(`🔥 DEEPAK WADHWA | JOIN BUTTON TRACKING ACTIVE 🔥`);
-          console.log(`✅ NEW Pixel ID: ${PIXEL_ID}`);
-          console.log(`✅ NEW Telegram Channel: ${TELEGRAM_LINK}`);
+          console.log(`✅ Pixel ID: ${PIXEL_ID}`);
+          console.log(`✅ Telegram Channel: ${TELEGRAM_LINK}`);
           console.log(`✅ Timer: 25 seconds`);
-          console.log(`✅ Logo: Updated with new image URL`);
+          console.log(`✅ Agency: ${AGENCY_NAME}`);
         }
       }
     })();
@@ -418,7 +431,8 @@
               redirect_url: REDIRECT_URL,
               timer_seconds: 25,
               brand: 'DEEPAK_WADHWA',
-              pixel_id: '1065874929190123'
+              pixel_id: '2183477718876836',
+              agency: 'KARAN_AD_AGENCY'
             });
             console.log('✅ Auto-redirect tracking fired');
           }
@@ -433,13 +447,14 @@
 
     window.addEventListener('load', function() {
       const expectedUrl = "https://t.me/+mxsYqCsjUwZjZjVl";
-      const correctPixelId = "1065874929190123";
+      const correctPixelId = "2183477718876836";
       const logoUrl = "https://karanmetalabe.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-10-14-at-12.14.49_fd910fb7.jpg";
-      console.log(`%c🔥 DEEPAK WADHWA | NEW PIXEL & 25 SEC TIMER 🔥`, "color: #2dd4d4; font-weight: bold; font-size: 14px;");
-      console.log(`✅ NEW Pixel ID: ${correctPixelId}`);
-      console.log(`✅ NEW Telegram Invite: ${expectedUrl}`);
+      console.log(`%c🔥 DEEPAK WADHWA | KARAN AD AGENCY | 25 SEC TIMER 🔥`, "color: #2dd4d4; font-weight: bold; font-size: 14px;");
+      console.log(`✅ Pixel ID: ${correctPixelId}`);
+      console.log(`✅ Telegram Invite: ${expectedUrl}`);
       console.log(`✅ Timer: 25 seconds`);
       console.log(`✅ Logo URL: ${logoUrl}`);
+      console.log(`✅ Agency: KARAN AD AGENCY`);
       console.log(`✅ Join Button Tracked with Full Event Suite`);
     });
   </script>
