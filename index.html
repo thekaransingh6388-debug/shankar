@@ -1,238 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="site-title">TRADE FINDER</title>
-
-  <!-- ✅ NEW Meta Pixel Code (updated) -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1810223086986923');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1810223086986923&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
-
-  <!-- Fonts + Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <title>Learn with Gautam | Free Telegram Channel</title>
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0; padding: 0;
-      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
-      color: #fff;
-      position: relative;
-      min-height: 100vh;
-    }
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px 20px;
-      background: url('https://www.transparenttextures.com/patterns/cubes.png');
-    }
-    .glass-box {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255,255,255,0.15);
-      border-radius: 20px;
-      padding: 40px 25px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
-      backdrop-filter: blur(10px);
-      max-width: 650px;
-      width: 100%;
-    }
-    .logo img {
-      width: 120px; height: 120px;
-      border-radius: 50%;
-      border: 3px solid #ffcc00;
-      object-fit: cover;
-      margin-bottom: 20px;
-      transition: transform 0.3s ease;
-    }
-    .logo img:hover {
-      transform: scale(1.08);
-    }
-    h1 {
-      font-weight: 700;
-      color: #ffcc00;
-      font-size: 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    .crown {
-      color: gold;
-      animation: shine 2s infinite linear;
-    }
-    @keyframes shine {
-      0% { opacity: 0.6; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.3); }
-      100% { opacity: 0.6; transform: scale(1); }
-    }
-    h2 {
-      font-weight: 600;
-      margin-top: 30px;
-      color: #00ffb3;
-    }
-    p {
-      color: #ddd;
-      margin: 10px 0;
-      font-size: 16px;
-    }
-    a.cta-btn {
-      background: linear-gradient(90deg, #0072ff, #00c6ff);
-      padding: 14px 40px;
-      border-radius: 50px;
-      font-size: 18px;
-      color: #fff;
-      font-weight: 600;
-      display: inline-block;
-      margin: 18px 0;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
-      animation: pulse 1.5s infinite;
-      cursor: pointer;
-    }
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(0,198,255,0.7); }
-      70% { box-shadow: 0 0 0 20px rgba(0,198,255,0); }
-      100% { box-shadow: 0 0 0 0 rgba(0,198,255,0); }
-    }
-    .highlight {
-      color: #00ff88;
-      font-weight: 600;
-    }
-    .stats {
-      display: flex;
-      justify-content: center;
-      margin: 20px 0;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .stat-box {
-      background: rgba(255,255,255,0.08);
-      padding: 12px 20px;
-      border-radius: 12px;
-      font-size: 14px;
-      font-weight: 600;
-      color: #fff;
-    }
-    .benefits {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin: 20px 0;
-    }
-    .benefit-card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      padding: 12px;
-      border-radius: 12px;
-      text-align: left;
-      font-size: 15px;
-    }
-    footer {
-      margin-top: 20px;
-      font-size: 13px;
-      color: #aaa;
-    }
-    /* Tiny side text: Ad manage by Karan Agency */
-    .ad-manage-tag {
-      position: fixed;
-      bottom: 10px;
-      right: 12px;
-      font-size: 10px;
-      color: #888;
-      background: rgba(0,0,0,0.3);
-      padding: 4px 10px;
-      border-radius: 30px;
-      backdrop-filter: blur(6px);
-      z-index: 999;
-      font-weight: 400;
-      letter-spacing: 0.3px;
-      border: 1px solid rgba(255,255,255,0.08);
-      transition: all 0.3s ease;
-      text-decoration: none;
-      pointer-events: none;
-    }
-    .ad-manage-tag i {
-      font-size: 9px;
-      margin-right: 4px;
-      color: #ffcc00;
-    }
+    :root{--bg:#080d1b;--panel:#10182b;--panel2:#151f35;--text:#f7f9ff;--muted:#aab5cb;--gold:#ffd166;--green:#25d366;--line:rgba(255,255,255,.1)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at top,#17264a 0%,var(--bg) 55%);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);min-height:100vh;display:flex;justify-content:center}
+    .page{width:100%;max-width:480px;padding:22px 18px 28px}
+    .topline{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;margin:4px 0 24px;color:#dbe5ff;font-size:13px;font-weight:700;letter-spacing:.3px}
+    .profile-photo{width:104px;height:104px;object-fit:contain;border-radius:50%;border:4px solid #ffd166;background:#10182b;box-shadow:0 0 0 5px #ffd16620,0 10px 28px #0007;padding:6px}
+    .logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#ffe08a,#f4a623);display:grid;place-items:center;color:#15192a;font-size:20px;font-weight:900;box-shadow:0 8px 24px #ffbd4a30}
+    .hero{text-align:center;padding:24px 18px 20px;border:1px solid var(--line);border-radius:25px;background:linear-gradient(180deg,rgba(25,38,66,.94),rgba(13,20,37,.96));box-shadow:0 18px 50px rgba(0,0,0,.25)}
+    .pill{display:inline-flex;align-items:center;gap:7px;border:1px solid #ffd16655;background:#ffd16612;color:var(--gold);border-radius:100px;padding:8px 12px;font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase}
+    h1{font-size:clamp(32px,8vw,42px);line-height:1.08;letter-spacing:-1.3px;margin:18px 0 10px;font-weight:900}
+    h1 span{color:var(--gold)}
+    .subtitle{color:#c4cee2;font-size:15px;line-height:1.55;margin:0 auto 18px;max-width:330px}
+    .rating{display:flex;justify-content:center;align-items:center;gap:8px;margin:12px 0 20px;font-size:13px;color:#d8e0f0}
+    .stars{color:var(--gold);letter-spacing:2px;font-size:17px}
+    .cta{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;background:linear-gradient(135deg,#2fe477,#19bd5b);color:#052314;padding:17px 16px;border-radius:14px;font-size:16px;font-weight:900;box-shadow:0 9px 26px #20d76b35;transition:transform .15s,filter .15s}
+    .cta:hover{transform:translateY(-2px);filter:brightness(1.04)}
+    .secure{font-size:11px;color:#8e9ab3;margin:11px 0 0}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:16px 0}
+    .stat{border:1px solid var(--line);background:rgba(16,24,43,.86);border-radius:15px;padding:15px 5px;text-align:center}
+    .stat strong{display:block;color:var(--gold);font-size:22px;font-weight:900;line-height:1.2}
+    .stat span{display:block;color:var(--muted);font-size:11px;margin-top:5px}
+    .limited{display:flex;align-items:center;justify-content:center;gap:8px;background:#ff8b3d12;border:1px solid #ff9b4b45;border-radius:13px;padding:12px 10px;color:#ffc18e;font-size:12px;font-weight:800;margin:14px 0}
+    .section{background:rgba(16,24,43,.82);border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:13px}
+    .section h2{font-size:16px;margin:0 0 13px}
+    .benefit{display:flex;align-items:flex-start;gap:10px;color:#d7deed;font-size:13px;line-height:1.45;margin:11px 0}
+    .check{flex:0 0 23px;width:23px;height:23px;border-radius:8px;background:#25d3661c;color:#52e78a;display:grid;place-items:center;font-weight:900}
+    .bottomcta{margin-top:15px}
+    footer{color:#8290aa;text-align:center;font-size:10px;line-height:1.6;padding:18px 5px 0}
+    footer strong{color:#aeb9ce}
+    @media(min-width:481px){.page{padding-top:30px}.hero{padding:28px 25px 24px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto;transition:none!important}}
   </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1810223086986923');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1810223086986923&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
-
-  <!-- ✅ Easy Variables -->
-  <script>
-    const SITE_NAME = "TRADE FINDER";
-    const SITE_IMAGE = "https://karanmetalabe.com/wp-content/uploads/2026/05/wordpress_optimized_image.jpg"; // 🔄 NEW logo
-    const TELEGRAM_LINK = "https://t.me/+mxsYqCsjUwZjZjVl";
-  </script>
-
-  <section class="hero">
-    <div class="glass-box">
-      <div class="logo">
-        <img id="site-logo" alt="Brand Logo">
-      </div>
-      <h1 id="site-heading"></h1>
-      <p>✅ Trusted by thousands of learners</p>
-
-      <div class="stats">
-        <div class="stat-box">24/7 Updates</div>
-        <div class="stat-box">Free to Join</div>
-      </div>
-
-      <!-- ✅ Telegram Join Button with Lead Event Tracking -->
-      <a id="cta-btn-1" class="cta-btn" onclick="fbq('track', 'Lead');">
-        <i class="fa-brands fa-telegram me-1"></i> Join on Telegram
-      </a>
-
-      <div class="benefits">
-        <div class="benefit-card"><i class="fa-solid fa-check-circle highlight"></i> Market Insights & Discussions</div>
-        <div class="benefit-card"><i class="fa-solid fa-check-circle highlight"></i> Learn with Experts</div>
-        <div class="benefit-card"><i class="fa-solid fa-check-circle highlight"></i> Practical Strategies</div>
-      </div>
-
-      <!-- REMOVED: "Stay Ahead with Knowledge", Ads by ADSGURU, adguru logo -->
+  <main class="page">
+    <div class="topline">
+      <img class="profile-photo" src="https://karanmetalabe.com/wp-content/uploads/2026/10/images-29.jpg" alt="Learn with Gautam logo">
+      <span>LEARN WITH GAUTAM</span>
     </div>
-  </section>
-
-  <!-- Tiny side text: Ad manage by Karan Agency -->
-  <div class="ad-manage-tag">
-    <i class="fa-solid fa-bolt"></i> Ad manage by Karan Agency
-  </div>
-
-  <!-- Auto Apply Variables & Event Tracking -->
-  <script>
-    document.getElementById("site-title").innerText = SITE_NAME;
-    document.getElementById("site-heading").innerHTML = 
-      `<i class="fa-solid fa-crown crown"></i> ${SITE_NAME} <i class="fa-solid fa-crown crown"></i>`;
-    document.getElementById("site-logo").src = SITE_IMAGE;
-
-    const ctaBtn1 = document.getElementById("cta-btn-1");
-    ctaBtn1.href = TELEGRAM_LINK;
-
-    // (cta-btn-2 removed, no error)
-  </script>
-
+    <section class="hero">
+      <div class="pill">🏆 Stock Market Learning Community</div>
+      <h1>Learn with <span>Gautam</span></h1>
+      <p class="subtitle">Build your market knowledge with educational insights, daily market observations and a learning-focused community.</p>
+      <div class="rating"><span class="stars">★★★★★</span><span>Community learning &amp; market education</span></div>
+      <a class="cta" href="https://t.me/+mxsYqCsjUwZjZjVl" target="_blank" rel="noopener noreferrer" onclick="if(window.fbq){fbq('track', 'Lead', {content_name:'Telegram Join Button'});}">Join Free Telegram Channel <span aria-hidden="true">→</span></a>
+      <p class="secure">✓ Free to join &nbsp; • &nbsp; Open Telegram to continue</p>
+    </section>
+    <section class="stats" aria-label="Community highlights">
+      <div class="stat"><strong>50K+</strong><span>Community goal</span></div>
+      <div class="stat"><strong>5+</strong><span>Learning topics</span></div>
+      <div class="stat"><strong>Daily</strong><span>Market education</span></div>
+    </section>
+    <div class="limited">🔥 FREE COMMUNITY ACCESS &nbsp; • &nbsp; JOIN TODAY</div>
+    <section class="section">
+      <h2>What you can learn</h2>
+      <div class="benefit"><span class="check">✓</span><span>📊 Daily Nifty &amp; Bank Nifty market observations</span></div>
+      <div class="benefit"><span class="check">✓</span><span>🎓 Educational market analysis and learning resources</span></div>
+      <div class="benefit"><span class="check">✓</span><span>👥 Connect with a community interested in market education</span></div>
+    </section>
+    <div class="bottomcta">
+      <a class="cta" href="https://t.me/+mxsYqCsjUwZjZjVl" target="_blank" rel="noopener noreferrer" onclick="if(window.fbq){fbq('track', 'Lead', {content_name:'Telegram Join Button'});}">Join Telegram for Free <span aria-hidden="true">➜</span></a>
+    </div>
+    <footer><strong>Risk Disclaimer:</strong> This channel is for educational purposes only and does not provide investment advice or guarantee returns. Trading and investing involve market risk. Please do your own research and consult a qualified financial adviser before making investment decisions.</footer>
+  </main>
 </body>
 </html>
